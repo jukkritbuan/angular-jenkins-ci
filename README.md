@@ -1,4 +1,6 @@
-# AngularJenkinsCi
+# Angular starter project with jenkins tests
+
+Angular starter app configured for unit & e2e tests with headless chrome in jenkins environment.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
 
