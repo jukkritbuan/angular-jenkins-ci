@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'zenika/alpine-chrome'
+            image 'zenika/alpine-chrome:with-node'
             args '-u 0:0 --entrypoint=""' // set user to root
         }
     }
