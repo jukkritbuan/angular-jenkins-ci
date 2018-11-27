@@ -12,10 +12,11 @@ pipeline {
                 sh "npm install"
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Deploying..'
-            }
+        stage('Unit Tests') {
+          steps {
+              echo 'Unit testing..'
+              sh "npm run test:ci"
+          }
         }
     }
 }
