@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh "npm install"
+                sh "rm -rf node_modules && npm install"
             }
         }
         stage('Unit Tests') {
