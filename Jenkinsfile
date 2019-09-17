@@ -1,8 +1,6 @@
 pipeline {
     agent {
-        docker {
-            image 'avatsaev/angular-chrome-headless'
-        }
+       
     }
     stages {
         stage('npm install') {
