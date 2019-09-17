@@ -1,11 +1,8 @@
 pipeline {
-    agent {
-       
-    }
     stages {
         stage('npm install') {
             steps {
-                sh "npm install"
+                sh "npm ci"
             }
         }
         stage('Unit Tests') {
