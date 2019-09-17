@@ -4,9 +4,8 @@ pipeline {
             image 'avatsaev/angular-chrome-headless'
         }
     }
-    tools {nodejs "node"
-        docker "docker"
-    }
+    tools {nodejs "node"}
+    tools {docker "docker"}
     stages {
         stage('npm install') {
             steps {
